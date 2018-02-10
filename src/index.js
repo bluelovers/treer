@@ -97,7 +97,7 @@ const drawDirTree = (data, placeholder) => {
 				if (idx === (arr.length - 1)) {
 					let regex = new RegExp(`${contain}${line}$`, "g")
 
-					pl = placeholder.replace(regex, last)
+					pl = placeholder.replace(regex, last + line)
 				}
 
 				if (typeof val === 'string') {
